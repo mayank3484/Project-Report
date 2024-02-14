@@ -11,7 +11,7 @@ def main():
     
     st.markdown(html_temp,unsafe_allow_html=True)
     
-    model= pickle.load(open('Streamlt/LinearRegression.pkl','rb'))
+    model= pickle.load(open('LinearRegression.pkl','rb'))
     p1= st.number_input('Enter Your Age in range 18 to 100',18,100,"min",1,format="%d")
     s1= st.selectbox('Sex',('Male','Female'))
     
