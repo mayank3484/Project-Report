@@ -4,4 +4,4 @@ matplotlib
 joblib
 numpy
 plotly
-PIL
+pillow
