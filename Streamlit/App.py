@@ -18,7 +18,7 @@ def main():
         
         
         
-    model= joblib.load('LinearRegression.pkl')
+    model= joblib.load('Streamlit/LinearRegression.pkl')
     p1= st.number_input('Enter Your Age in range 18 to 100',18,100,"min",1,format="%d")
     s1= st.selectbox('Sex',('Male','Female'))
     
@@ -54,7 +54,7 @@ def main():
             st.success('Your Insurance Cost is {}'.format(round(pred[0],2)))
             st.header("what cause such a high health insurance cost?")
             tab1, tab2, tab3 = st.tabs(["Smoking","BMI","Age"])
-            transformed_data=pd.read_csv('transformed.csv')
+            transformed_data=pd.read_csv('Streamlit/transformed.csv')
             with tab1:
                 fig1=px.histogram(data_frame=transformed_data,x="smoker",y="charges",opacity=0.6,histfunc='avg')
                 st.plotly_chart(fig1)
