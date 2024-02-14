@@ -3,8 +3,7 @@ import joblib
 from PIL import Image
 import plotly.express as px
 import pandas as pd
-from pathlib import Path
-st.text(Path.cwd())
+
 def title():
     html_temp = """
         <div style="background-color:lightpink;padding:16px">
