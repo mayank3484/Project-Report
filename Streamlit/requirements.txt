@@ -5,3 +5,4 @@ joblib
 numpy
 plotly
 pillow
+pathlib
