@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
-import warnings
-warnings.filterwarnings("ignore")
+
 def main():
     html_temp = """
     <div style="background-color:lightpink;padding:16px">
