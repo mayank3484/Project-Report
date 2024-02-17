@@ -22,7 +22,7 @@ def main():
         test_file=st.file_uploader('Upload text file contain Inertial data and feature',type={'txt'})
         if test_file is not None:
             test_data=pd.read_csv(test_file, delim_whitespace=True, header=None)
-            model=joblib.load('LinearSVM.pkl')
+            model=joblib.load('Activity_Recognition_Project/LinearSVM.pkl')
             if st.button('Predict'):
                 pred=model.predict(test_data)
                 st.success('Maximum Activity that human performing is {}'.format(prediction_df.value_counts().head(1)))
@@ -44,7 +44,7 @@ def main():
             test_df=pd.read_csv(input_data)
             test_df=test_df.drop(['subject','Activity','ActivityName'],axis=1)
                         
-            model=joblib.load('LinearSVM.pkl')
+            model=joblib.load('Activity_Recognition_Project/LinearSVM.pkl')
             if st.button('Predict'):
                 pred=model.predict(test_df)
                 prediction_df=pd.DataFrame(pred)
