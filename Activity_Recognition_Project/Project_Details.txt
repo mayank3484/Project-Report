@@ -1,0 +1,2 @@
+This Project have activity recognition file that have eda in it, activity recognition using ml that contains different models, 
+LogisticRegression.pkl file, activity.py that contains app, requirements.txt file. 
